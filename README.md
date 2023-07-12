@@ -4,14 +4,26 @@
 
 * Video Demo
 * Description
+* Requirements
+* Installation
+* Usage
+* Features
+  * Home Page
+  * Chat Room Page
+* Code Structure
+  * App.py File
+  * Main.js File
+* Customization
+* Deployment
+* Conclusion
 
-### Video Demo: <https://youtube.com>
+### Video Demo: <https://youtu.be/-iT6aoJwfKE>
 
 ### Description
 
 Chatsy is a web-based chat application built using the Flask framework and Flask-SocketIO library. It enables real-time communication between multiple clients in a chat room environment. The application allows users to create new chat rooms or join existing ones, exchange messages with other participants, and stay engaged in dynamic conversations.
 
-#### Requirements
+### Requirements
 
 * Python 3.6 or above
 * Flask
@@ -44,7 +56,7 @@ pip install flask flask-socketio eventlet
     pip install flask flask-socketio eventlet
     ```
 
-#### Usage
+### Usage
 
 To test this application, you must start the Flask development server:
 
