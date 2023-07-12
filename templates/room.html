@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Chat Room
+{% endblock %}
+
+{% block content %}
+    <div class="message-box">
+        <h2>Chat Room: {{ code }}</h2>
+        <div class="messages" id="messages"></div>
+        <div class="inputs">
+            <input type="text" name="message" id="message" placeholder="Message" rows="3">
+            <button type="submit" name="send" id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script/main.js') }}"></script>
+
+    {% for msg in messages %}
+        <script type="text/javascript">
+            createMessage("{{msg.name}}", "{{msg.message}}");
+        </script>
+    {% endfor %}
+{% endblock %}
