@@ -154,14 +154,15 @@ h2 {
 .text {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 2.5px 0 2.5px 10px;
+    padding: 2.5px 10px 2.5px 10px;
 }
 
 .muted {
     font-size: 10px;
     color: darkgray;
+    padding-top: 5px
 }
 
 .alert-container {
